@@ -2,12 +2,16 @@
   "name": "vitrine-indoor-ia",
   "version": "4.4.0",
   "description": "Player autonomo de vitrine corporativa e midia indoor com auditoria local e layout homologado",
+  "type": "module",
   "main": "index.html",
   "scripts": {
-    "start": "node scripts/server.js",
-    "dev": "node scripts/server.js",
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "build:single": "cross-env SINGLE_FILE=true vite build",
+    "preview": "vite preview",
+    "start": "node scripts/server.cjs",
     "serve:py": "python scripts/serve.py",
-    "audit": "node scripts/server.js --open-auditor"
+    "audit": "node scripts/server.cjs --open-auditor"
   },
   "repository": {
     "type": "git",
@@ -22,5 +26,10 @@
   ],
   "author": "Cristiano (Vitrine IA Pro)",
   "license": "UNLICENSED",
-  "devDependencies": {}
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.6",
+    "vite-plugin-singlefile": "^2.3.4"
+  }
 }

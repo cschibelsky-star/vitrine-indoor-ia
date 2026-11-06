@@ -1,0 +1,68 @@
+{
+  "version": 1,
+  "items": [
+    {
+      "id": "noticia-1",
+      "type": "news",
+      "title": "Notícias da região em destaque",
+      "description": "Demonstração de matéria; sem integração editorial",
+      "imageIndex": 0,
+      "duration": 18,
+      "from": "00:00",
+      "until": "23:59",
+      "enabled": true
+    },
+    {
+      "id": "evento-1",
+      "type": "event",
+      "title": "Agenda cultural e atividades da cidade",
+      "description": "Exemplo de programação; aguarda confirmação",
+      "imageIndex": 2,
+      "duration": 18,
+      "from": "00:00",
+      "until": "23:59",
+      "enabled": true
+    },
+    {
+      "id": "institucional-vitrine",
+      "type": "video",
+      "title": "Vitrine IA Pro — Institucional (demonstração)",
+      "description": "Intro institucional enviada para o teste local",
+      "duration": 14,
+      "from": "00:00",
+      "until": "23:59",
+      "enabled": true
+    },
+    {
+      "id": "anuncio-1",
+      "type": "ad",
+      "title": "SUA MARCA EM DESTAQUE AQUI",
+      "description": "Publicidade de demonstração",
+      "duration": 18,
+      "from": "00:00",
+      "until": "23:59",
+      "enabled": true
+    },
+    {
+      "id": "noticia-2",
+      "type": "news",
+      "title": "Informações úteis para a população",
+      "description": "Comunicados ilustrativos",
+      "imageIndex": 1,
+      "duration": 18,
+      "from": "00:00",
+      "until": "23:59",
+      "enabled": true
+    },
+    {
+      "id": "anuncio-2",
+      "type": "ad",
+      "title": "ANUNCIE SEU NEGÓCIO",
+      "description": "Campanhas locais programáveis",
+      "duration": 18,
+      "from": "00:00",
+      "until": "23:59",
+      "enabled": true
+    }
+  ]
+}

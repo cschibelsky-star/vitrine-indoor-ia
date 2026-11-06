@@ -11,17 +11,26 @@ Você tem três opções para rodar o projeto:
 ### Opção 1: Dois cliques (Windows)
 - Dê um duplo clique no arquivo `start.bat`. Ele iniciará o servidor local e abrirá o navegador em `http://localhost:8080`.
 
-### Opção 2: Node.js (Recomendado)
+### Opção 2: Modo Desenvolvimento Moderno (Vite + TypeScript)
 ```bash
-npm install # nenhuma dependência obrigatória
-npm start   # inicia o servidor Node com suporte a Range requests
+npm install
+npm run dev   # Inicia servidor Vite com hot-reload (HMR)
+```
+
+### Opção 3: Servidor Leve Node.js (Range Requests para MP4)
+```bash
+npm start     # Inicia scripts/server.cjs na porta 8080
 ```
 - **Player principal:** [http://localhost:8080/](http://localhost:8080/)
 - **Auditor de logs:** [http://localhost:8080/auditor/](http://localhost:8080/auditor/)
 
-### Opção 3: Direto no Navegador (Offline)
-- Abra diretamente o arquivo `index.html` no Google Chrome ou Microsoft Edge.
-- Mantenha `intro_vitrine.mp4` no mesmo diretório para exibição do vídeo institucional de introdução.
+### Opção 4: Compilação de Produção
+```bash
+npm run build # Compila TypeScript e gera bundle em /dist
+```
+
+### Opção 5: Versão Estática Autocontida (Offline)
+- A versão autocontida original de 1 arquivo continua preservada em `docs/player_v44_autocontido_original.html`.
 
 ---
 

@@ -2,6 +2,10 @@
 *.log
 *.tmp
 
+# Node.js
+node_modules/
+dist/
+
 # Backups e arquivos de sistema
 .DS_Store
 Thumbs.db

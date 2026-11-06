@@ -1,0 +1,109 @@
+
+*{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#020817;color:#fff;font-family:Arial,Helvetica,sans-serif}#screen{width:1536px;height:864px;position:absolute;transform-origin:0 0;overflow:hidden;background:#06133a}#art{position:absolute;inset:0;width:100%;height:100%;object-fit:fill} .layer{position:absolute;overflow:hidden;transition:opacity .45s}#clock{position:absolute;left:1317px;top:1px;width:219px;height:158px;z-index:12;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:0;background:linear-gradient(135deg,#006bef 0%,#034bdf 45%,#09309a 100%);border-radius:43px 0 0 0;border-top:2px solid #00d9ff;border-left:2px solid #00d9ff;box-shadow:inset 12px 0 28px #10a3ff40,0 0 15px #008aff44}#clock .date{font-size:14px;color:#bce9ff;letter-spacing:.4px;white-space:nowrap;font-weight:600;margin:3px 0 1px}#clock .time{font-size:59px;font-weight:900;line-height:1;letter-spacing:-2px;color:#fff;white-space:nowrap;font-variant-numeric:tabular-nums;text-shadow:0 2px 12px #00154a}
+#news{left:20px;top:163px;width:1008px;height:472px;border:3px solid #ade6ff;border-radius:35px;background:#0b2d5b;isolation:isolate}#news img{position:absolute;width:100%;height:100%;object-fit:cover;z-index:-2}#news .shade{position:absolute;inset:0;background:linear-gradient(0deg,rgba(0,9,25,.96),rgba(0,10,28,.15) 75%);z-index:-1}#news .story{position:absolute;bottom:32px;left:35px;right:30px}#news .tag{display:inline-block;background:#df243d;border-radius:20px;padding:9px 16px;font-size:18px;font-weight:700}#news h1{font-size:42px;line-height:1.06;max-width:900px;margin:16px 0 11px;text-shadow:0 2px 10px #000}#news p{font-size:23px;line-height:1.17;max-width:850px;margin:0;text-shadow:0 2px 8px #000}
+#ad{left:1044px;top:164px;width:477px;height:587px;border:3px solid #f9d5a0;border-radius:28px;isolation:isolate;background:#ffac00;box-shadow:0 0 0 2px rgba(9,199,250,.4)}#ad img{position:absolute;width:100%;height:100%;object-fit:cover;z-index:-2}#ad .adveil{position:absolute;inset:0;background:linear-gradient(140deg,#ffb20e 0%,#fb9b0a 55%,#091b44 56%);z-index:-1}#ad .adcopy{padding:40px 26px;color:#071d43}#ad h2{font-size:45px;line-height:1.07;margin:16px 0 15px;font-weight:900;white-space:pre-line}#ad p{font-size:22px;line-height:1.3;font-weight:600}#ad .adbottom{position:absolute;bottom:25px;left:26px;color:white;font-weight:900;font-size:25px}#ad .adbottom small{display:block;font-size:15px;margin-top:9px;font-weight:600}#ad .pill{display:inline-block;color:white;background:#092c66;padding:9px 12px;border-radius:30px;font-weight:bold;font-size:15px}
+#widgets{position:absolute;left:19px;top:646px;width:1010px;height:115px;display:flex;gap:5px}.widget{flex:1;min-width:0;border-radius:21px;background:linear-gradient(145deg,#0868c1,#08458f);border:1px solid rgba(133,207,255,.45);padding:13px 15px;display:flex;gap:12px;align-items:center;box-shadow:inset 0 0 18px #168cdb35}.widget .ico{font-size:35px;min-width:41px;text-align:center}.widget .word{font-size:15px;font-weight:800}.widget .detail{font-size:17px;font-weight:700;line-height:1.2;margin-top:5px}.widget .sub{font-size:11px;line-height:1.2;margin-top:4px;color:#d8e9ff}.widget .temperature{font-size:39px;font-weight:800;line-height:1}.muted{font-size:11px;color:#d8eaff}.hidden{opacity:0;pointer-events:none}.controls{position:fixed;z-index:30;right:15px;bottom:15px;display:flex;gap:6px;opacity:.12;transition:opacity .2s}.controls:hover,.controls:focus-within{opacity:1}.controls button{border:1px solid #54abff;background:#082a5c;color:white;padding:9px 12px;border-radius:9px;cursor:pointer}.status{position:fixed;z-index:25;bottom:10px;left:12px;font-size:12px;background:#051b4acc;color:#d6e9ff;padding:5px;border-radius:4px;opacity:.4}.status:hover{opacity:1}
+
+/* V2.8: strict vertical bounds for any headline and local video playback */
+#news .story{top:auto;bottom:27px;max-height:calc(100% - 65px);overflow:hidden;display:flex;flex-direction:column;align-items:flex-start}
+#news h1{font-size:clamp(24px,2.65vw,42px);line-height:1.08;overflow:hidden;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:3;line-clamp:3;overflow-wrap:anywhere;margin:12px 0 9px}
+#news p{font-size:21px;line-height:1.18;overflow:hidden;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;line-clamp:2;overflow-wrap:anywhere}
+#news .tag{max-width:100%;font-size:16px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#news video{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;background:#020d1f;z-index:5;display:none}
+#news.playing video{display:block}#news.playing .story,#news.playing .shade,#news.playing #newsImg{visibility:hidden}
+#mediaControls{position:fixed;left:50%;transform:translateX(-50%);bottom:16px;z-index:35;display:flex;gap:8px;align-items:center;opacity:.75}
+#mediaControls button{border:1px solid #34b7fa;background:#062e66;color:#fff;border-radius:8px;padding:10px 14px;cursor:pointer;font-weight:bold}
+#mediaControls button:hover{background:#15549a}
+
+/* V2.8: exclusive layer visibility and fully opaque content surfaces */
+#news{background:#071b38;isolation:isolate;contain:paint}
+#news img{z-index:0;object-fit:cover}
+#news .shade{z-index:1;background:linear-gradient(to top,rgba(1,10,30,.99) 0%,rgba(1,10,30,.78) 33%,rgba(1,10,30,0) 78%)}
+#news .story{z-index:2;left:31px;right:31px;bottom:25px;max-height:calc(100% - 52px);min-width:0;gap:0}
+#news h1{font-size:38px;max-width:100%;max-height:126px;line-height:1.08;display:-webkit-box;-webkit-line-clamp:3;line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;margin:10px 0 7px;overflow-wrap:break-word}
+#news p{font-size:19px;line-height:1.18;max-height:47px;max-width:100%;display:-webkit-box;-webkit-line-clamp:2;line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;margin:0}
+#news video{z-index:10;position:absolute;inset:0;display:none;background:#020d1f;width:100%;height:100%;object-fit:contain}
+#news.playing video{display:block}
+#news.playing #newsImg,#news.playing .shade,#news.playing .story{display:none!important}
+#news:not(.playing) video{display:none!important}
+#mediaControls,.controls,.status{display:none!important}
+body.technical #mediaControls,body.technical .controls,body.technical .status{display:flex!important;opacity:1}
+body.technical .status{display:block!important}
+#techHint{position:fixed;z-index:40;left:12px;bottom:8px;color:#b8d7f8;font:11px Arial;opacity:0;pointer-events:none}
+#qaPanel[hidden]{display:none!important}
+
+/* V2.8: opaque clean photo plane and one HTML-only title layer */
+#news{background:#061631!important;isolation:isolate;overflow:hidden!important}
+#newsImg{position:absolute!important;inset:0!important;width:100%!important;height:100%!important;object-fit:cover!important;z-index:0!important;opacity:1!important;filter:saturate(1.04)}
+#news .shade{position:absolute!important;inset:0!important;z-index:1!important;background:linear-gradient(to top,rgba(1,9,29,.98) 0%,rgba(1,9,29,.83) 24%,rgba(1,9,29,.25) 66%,transparent 100%)!important}
+#news .story{position:absolute!important;z-index:2!important;left:30px!important;right:32px!important;bottom:22px!important;max-height:60%!important;overflow:hidden!important}
+#news .tag{font-size:15px!important;padding:7px 12px!important}
+#news h1{font-size:36px!important;line-height:1.11!important;max-height:120px!important;display:-webkit-box!important;-webkit-box-orient:vertical!important;-webkit-line-clamp:3!important;overflow:hidden!important;margin:8px 0 5px!important}
+#news p{font-size:19px!important;line-height:1.25!important;max-height:50px!important;display:-webkit-box!important;-webkit-box-orient:vertical!important;-webkit-line-clamp:2!important;overflow:hidden!important;margin:0!important}
+#news video{position:absolute!important;z-index:5!important;inset:0!important;width:100%!important;height:100%!important;object-fit:contain!important;background:#061631!important}
+#news.playing #newsImg,#news.playing .shade,#news.playing .story{display:none!important}
+#news:not(.playing) video{display:none!important}
+
+/* V2.8 dynamic info source constraints */
+.widget{overflow:hidden}.widget .detail{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;overflow-wrap:anywhere}.widget .sub{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}#weather{max-width:145px}#localEditor{position:fixed;z-index:65;right:15px;top:14px;width:min(460px,96vw);background:#06224a;color:white;border:1px solid #35aef4;border-radius:14px;padding:17px;box-shadow:0 12px 40px #0009;font:14px Arial}#localEditor[hidden]{display:none}#localEditor label{display:block;margin:8px 0 3px}#localEditor input{width:100%;padding:9px;border-radius:6px;background:#fff;color:#091b40;border:0}#localEditor button{margin-top:12px;padding:9px 11px;border-radius:7px;background:#0b7fdb;color:#fff;border:0;cursor:pointer}#weatherSource{font-size:12px} 
+
+/* V3.1: transition content only, never the approved outer frame. */
+#news {transition:opacity .45s ease-in-out!important;}
+#news.indoor-fading {opacity:0!important;}
+#indoorInstitutional {position:absolute;inset:0;width:100%;height:100%;object-fit:contain;background:#07172f;z-index:8;display:none;}
+#news.indoor-institutional #indoorInstitutional{display:block;}
+#news.indoor-institutional #newsImg,#news.indoor-institutional .shade,#news.indoor-institutional .story{display:none!important;}
+
+#news.indoor-institutional #indoorInstitutional{display:block!important;visibility:visible!important;opacity:1!important;z-index:25!important}
+#news.indoor-institutional.fallback-on #indoorFallback{display:flex!important}
+#indoorFallback{position:absolute;inset:0;display:none;z-index:24;background:radial-gradient(circle at 70% 20%,#07589a,#061830 62%);align-items:center;justify-content:center;flex-direction:column;text-align:center;color:white;overflow:hidden}
+#indoorFallback .vbrand{font-size:53px;font-weight:800;letter-spacing:2px;text-shadow:0 0 35px #22afff;animation:institutionalRise 9s ease-in-out infinite}
+#indoorFallback .vsub{font-size:25px;letter-spacing:2px;color:#b2e9ff;margin-top:18px}
+#indoorFallback .vline{width:65%;height:4px;background:linear-gradient(90deg,transparent,#35dafa,#feaa35,transparent);margin:25px 0;animation:institutionalLight 4s ease-in-out infinite}
+@keyframes institutionalRise{0%{opacity:0;transform:scale(.94)}15%{opacity:1;transform:scale(1)}85%{opacity:1}100%{opacity:0}}
+@keyframes institutionalLight{50%{filter:brightness(1.7);transform:scaleX(.9)}}
+
+/* V3.4: camada independente e controlada, sem esconder a moldura. */
+#news {opacity:1!important;transition:none!important}
+#news.indoor-fading {opacity:1!important}
+#introOverlay{position:absolute;left:20px;top:163px;width:1008px;height:472px;border-radius:35px;overflow:hidden;z-index:29;opacity:0;visibility:hidden;pointer-events:none;background:#07172f;transition:opacity .8s ease-in-out,visibility 0s linear .8s;box-shadow:inset 0 0 0 3px #ade6ff}
+#introOverlay.active{visibility:visible;opacity:1;transition:opacity .8s ease-in-out,visibility 0s}
+#introOverlay video{display:block!important;position:absolute;inset:0;width:100%;height:100%;object-fit:contain;background:#07172f}
+#introOverlay .introMessage{position:absolute;inset:0;display:none;align-items:center;justify-content:center;text-align:center;flex-direction:column;background:radial-gradient(circle at 70% 15%,#0c5790,#041124 70%);color:#fff;font-weight:800;font-size:46px}
+#introOverlay.fallback .introMessage{display:flex}
+#introOverlay.fallback video{display:none!important}
+#news .story,#newsImg,#news .shade{transition:opacity .8s ease-in-out}
+#news.content-switching .story,#news.content-switching #newsImg,#news.content-switching .shade{opacity:0!important}
+
+/* V3.5: videos ocupam 100% da area editorial, sem faixas laterais.
+   cover preserva proporcao e recorta somente o excedente. */
+#news { overflow:hidden!important; }
+#news video, #news.playing video, #news #localVideo,
+#news #indoorInstitutional, #introOverlay video {
+ position:absolute!important;inset:0!important;
+ width:100%!important;height:100%!important;
+ object-fit:cover!important;object-position:50% 50%!important;
+ background:#07172f!important;max-width:none!important;max-height:none!important;
+ border:0!important;margin:0!important;padding:0!important;
+}
+#introOverlay{overflow:hidden!important;background:#07172f!important;}
+#introOverlay video{transform:none!important;}
+
+/* V3.6: painel de video inserido NO quadro editorial, jamais fora. */
+#news{position:absolute!important;overflow:hidden!important;isolation:isolate!important}
+#news #introOverlay{position:absolute!important;inset:0!important;left:0!important;top:0!important;width:100%!important;height:100%!important;box-sizing:border-box!important;z-index:90!important;border-radius:inherit!important;border:0!important;box-shadow:none!important;background:#061631!important;overflow:hidden!important;pointer-events:none!important;display:block!important;opacity:0!important;visibility:hidden!important;transition:opacity .85s ease,visibility 0s linear .85s!important}
+#news #introOverlay.active{opacity:1!important;visibility:visible!important;transition:opacity .85s ease,visibility 0s!important}
+#news #introOverlay video{position:absolute!important;inset:0!important;width:100%!important;height:100%!important;display:block!important;object-fit:cover!important;object-position:center center!important;opacity:1!important;visibility:visible!important;background:#061631!important;z-index:2!important}
+#news #introOverlay.fallback .introMessage{display:flex!important;z-index:3!important}
+#news #indoorInstitutional{display:none!important}
+#news .story,#news #newsImg,#news .shade{transition:opacity .85s ease!important}
+
+/* V3.7: crossfade no conteudo editorial, sem alterar a moldura ou anuncio lateral. */
+#news{isolation:isolate!important}
+#news .story,#news #newsImg,#news .shade{transition:opacity 1.15s cubic-bezier(.25,.1,.25,1)!important}
+#news.content-switching .story,#news.content-switching #newsImg,#news.content-switching .shade{opacity:0!important}
+#news #introOverlay{transition:opacity 1.15s cubic-bezier(.25,.1,.25,1),visibility 0s linear 1.15s!important}
+#news #introOverlay.active{transition:opacity 1.15s cubic-bezier(.25,.1,.25,1),visibility 0s!important}
+/* V4.2: fade exclusivo do texto da publicidade lateral. */
+#ad .adcopy{transition:opacity .65s ease!important}
+#ad.lateral-fade .adcopy{opacity:0!important}
