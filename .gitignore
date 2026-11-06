@@ -1,0 +1,13 @@
+# Logs e temporários
+*.log
+*.tmp
+
+# Backups e arquivos de sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Registros de auditoria gerados dinamicamente
+vitrine_indoor_m11_registros*.json
+vitrine_indoor_auditoria_v43_*.json
+vitrine_indoor_BACKUP_*.json

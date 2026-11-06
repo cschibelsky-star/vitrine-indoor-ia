@@ -1,0 +1,24 @@
+{
+  "build": "V4.4",
+  "origem_zip": "Vitrine_Indoor_IA_V4_4_RECUPERACAO_LOCAL.zip",
+  "source_sha256": "3d3b3a8b918298e424613bcc486b1dee9d391378cfc4779f7703530a00ddc99a",
+  "files": {
+    "index.html": {
+      "sha256": "a0445612a3ef54ecf8a8b8a635de515cc9ae41856da376737ce7235ccf9761cc",
+      "bytes": 1150716
+    },
+    "LEIA-ME-V4.4.txt": {
+      "sha256": "6e54e6b3462e206cb17e9a7d272f9b2de56d0afa770934b4dcd959915e3455db",
+      "bytes": 316
+    },
+    "Auditor_Vitrine_Indoor_IA_V4_3.html": {
+      "sha256": "ce128d1a70a71d536290a5846204617de02eb781b29fc65eca982db166958e5d",
+      "bytes": 14039
+    },
+    "intro_vitrine.mp4": {
+      "sha256": "36d66951d074e9287ae06a902746035c370b56f0cbc3cd266584dc851df4eb81",
+      "bytes": 4129852
+    }
+  },
+  "status": "FREEZE local; nao altera index.html ou mp4"
+}

@@ -1,0 +1,6 @@
+Vitrine Indoor IA V4.4 - homologacao local.
+Preservados player visual, fade, MP4 e 18 segundos.
+Novos eventos: janela_recuperada e atraso_lateral_detectado.
+Falha de video nao deve ser contabilizada como conclusao normal.
+Teste em Chrome (janela visivel, tela cheia) e exporte pelo painel T.
+Sem implantacao na VPS.

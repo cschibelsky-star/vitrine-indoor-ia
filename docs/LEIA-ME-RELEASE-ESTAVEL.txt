@@ -1,0 +1,13 @@
+VITRINE INDOOR IA V4.4 - RELEASE ESTAVEL LOCAL
+
+O player foi preservado bit a bit do ZIP V4.4 original.
+Validacao de logs: sessao de 29/10/2026 com mais de 35 minutos, sem intervalos laterais acima de 20 segundos.
+
+USO:
+1. Extraia todos os arquivos em nova pasta.
+2. Abra index.html no Chrome, mantendo intro_vitrine.mp4 no mesmo diretorio.
+3. Use T para abrir o painel tecnico e exportar o JSON.
+4. Use Auditor_Vitrine_Indoor_IA_V4_3.html para importar e analisar.
+5. Confirmacao visual e teste da janela oculta apos 20 minutos permanecem pendentes.
+
+NAO houve deploy em VPS/servidor.

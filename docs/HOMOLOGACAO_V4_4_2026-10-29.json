@@ -1,0 +1,38 @@
+{
+  "projeto": "Vitrine Indoor IA",
+  "build": "V4.4",
+  "status": "Referencia estavel para operacao local; homologacao de temporizacao aprovada; confirmacao visual pendente",
+  "data": "2026-10-29",
+  "sessao": "c21969b3-9c5e-4d81-879d-8664e621d04a",
+  "inicio": "2026-10-29T19:43:33.925Z",
+  "ultimo_registro": "2026-10-29T20:18:36.986Z",
+  "duracao_segundos": 2103.061,
+  "publicidade_lateral": {
+    "iniciados": 117,
+    "concluidos": 116,
+    "media_ms": 18129.5,
+    "maximo_ms": 19005,
+    "acima_20s": 0
+  },
+  "programacao_central": {
+    "iniciados": 110,
+    "concluidos": 108,
+    "interrompidos": 1,
+    "abertos": 1,
+    "concluidos_acima_20s": 0
+  },
+  "eventos": {
+    "janela_oculta": 4,
+    "janela_recuperada": 4,
+    "janela_visivel": 4,
+    "midia_reproduzindo": 18,
+    "midia_terminou": 18,
+    "midia_falhou": 0
+  },
+  "ressalvas": [
+    "Os registros internos nao comprovam exibicao fisica na tela",
+    "Ocultacao da janela apos minuto 20 nao foi especificamente exercitada",
+    "A ultima peca aberta na exportacao nao e falha"
+  ],
+  "producao": "Nenhum deploy realizado"
+}
