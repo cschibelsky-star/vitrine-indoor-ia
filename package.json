@@ -1,0 +1,26 @@
+{
+  "name": "vitrine-indoor-ia",
+  "version": "4.4.0",
+  "description": "Player autonomo de vitrine corporativa e midia indoor com auditoria local e layout homologado",
+  "main": "index.html",
+  "scripts": {
+    "start": "node scripts/server.js",
+    "dev": "node scripts/server.js",
+    "serve:py": "python scripts/serve.py",
+    "audit": "node scripts/server.js --open-auditor"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cschibelsky-star/vitrine-indoor-ia.git"
+  },
+  "keywords": [
+    "indoor-media",
+    "digital-signage",
+    "tv-corporativa",
+    "player",
+    "vitrine-ia-pro"
+  ],
+  "author": "Cristiano (Vitrine IA Pro)",
+  "license": "UNLICENSED",
+  "devDependencies": {}
+}

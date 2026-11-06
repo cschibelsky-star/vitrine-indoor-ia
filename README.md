@@ -1,46 +1,84 @@
 # Vitrine Indoor IA
 
-Player autônomo de vitrine corporativa (TV corporativa / mídia indoor) desenvolvido para rodar localmente em displays 1536x864 (ou escalonado) com conteúdo de notícias, previsão do tempo, anúncios institucionais e widgets integrados.
-
-## Características Principais
-
-- **Player em HTML/CSS/JS autocontido**: assets embutidos em base64, sem dependências externas.
-- **Layout de TV corporativa**: relógio, painel de notícias, coluna de publicidade, widgets (clima, locais de interesse, notícias externas).
-- **Suporte a transições suaves e modo intro (`intro_vitrine.mp4`)**.
-- **Painel técnico oculto**: exporte logs em JSON para auditoria (tecla T).
-- **Ferramenta de auditoria** (`Auditor_Vitrine_Indoor_IA_V4_3.html`) para análise local dos registros de execução.
-- **Homologação documentada** (HOMOLOGACAO_V4_4_2026-10-29.json) com sessão de 35+ minutos sem intervalos laterais > 20s.
-
-## Como Executar (Local)
-
-1. Extraia os arquivos em uma pasta local.
-2. Abra `index.html` no Chrome ou Edge.
-3. Pressione `F` para entrar em tela cheia.
-4. Pressione `T` para abrir o painel técnico (se necessário) e exportar logs.
-5. Importe os logs exportados em `Auditor_Vitrine_Indoor_IA_V4_3.html` para análise.
-
-> Nota: o arquivo `intro_vitrine.mp4` deve permanecer no mesmo diretório de `index.html` para a animação de abertura funcionar.
-
-## Estrutura da Versão Estável (V4.4)
-
-- `index.html` — Player principal (V3.6 · Intro visível, player único).
-- `Auditor_Vitrine_Indoor_IA_V4_3.html` — Ferramenta de auditoria local.
-- `intro_vitrine.mp4` — Vídeo de abertura.
-- `HOMOLOGACAO_V4_4_2026-10-29.json` — Registro de homologação (29/10/2026).
-- `MANIFESTO_SHA256.json` — Manifesto de integridade SHA256 da versão.
-- `LEIA-ME-V4.4.txt` e `LEIA-ME-RELEASE-ESTAVEL.txt` — Notas da versão e validações.
-
-## Estado Atual
-
-- ✅ Estável local (V4.4) com player preservado bit a bit.
-- ✅ Sessão homologada >35 minutos com logs completos.
-- ⚠️ Não houve deploy em VPS/servidor nesta fase (conforme nota do autor).
-- 🔄 Janela oculta após 20 minutos e confirmação visual em tela cheia são os próximos passos pendentes de homologação.
-
-## Autor
-
-Cristiano (cschibelsky-star) — Vitrine IA Pro
+Player autônomo de vitrine corporativa (TV corporativa / mídia indoor) desenvolvido para rodar localmente ou em display dedicado (proporção 16:9, base 1536x864) com conteúdo de notícias, previsão do tempo, anúncios institucionais e widgets dinâmicos.
 
 ---
 
-*Este repositório visa centralizar, versionar e documentar o projeto Vitrine Indoor IA para evolução contínua e eventual integração com o ecossistema VIA / TV Sumaré.*
+## 🚀 Inicialização Rápida
+
+Você tem três opções para rodar o projeto:
+
+### Opção 1: Dois cliques (Windows)
+- Dê um duplo clique no arquivo `start.bat`. Ele iniciará o servidor local e abrirá o navegador em `http://localhost:8080`.
+
+### Opção 2: Node.js (Recomendado)
+```bash
+npm install # nenhuma dependência obrigatória
+npm start   # inicia o servidor Node com suporte a Range requests
+```
+- **Player principal:** [http://localhost:8080/](http://localhost:8080/)
+- **Auditor de logs:** [http://localhost:8080/auditor/](http://localhost:8080/auditor/)
+
+### Opção 3: Direto no Navegador (Offline)
+- Abra diretamente o arquivo `index.html` no Google Chrome ou Microsoft Edge.
+- Mantenha `intro_vitrine.mp4` no mesmo diretório para exibição do vídeo institucional de introdução.
+
+---
+
+## ⌨️ Atalhos do Player
+
+- **`F`**: Alternar para modo **Tela Cheia**.
+- **`T`**: Exibir / Ocultar **Painel Técnico** (para inspeção de status e exportação do log JSON).
+
+---
+
+## 📁 Estrutura Organizada do Repositório
+
+```
+vitrine-indoor-ia/
+├── index.html            # Player Principal (V3.6/V4.4)
+├── intro_vitrine.mp4     # Vídeo institucional de abertura
+├── Auditor_...html       # Auditor de integridade (espelhado na raiz)
+├── start.bat             # Atalho para Windows
+├── package.json          # Scripts e metadados npm
+│
+├── auditor/              # Ferramenta de auditoria (Auditor V4.3)
+│   └── index.html        # Acessível via /auditor
+│
+├── assets/               # Peças visuais e molduras
+│   └── moldura_aprovada.png
+│
+├── data/samples/         # Amostras reais de logs para testes do auditor
+│   ├── exemplo_auditoria_v43.json
+│   └── exemplo_registros_m11.json
+│
+├── docs/                 # Documentação técnica e manifestos de homologação
+│   ├── ARQUITETURA.md    # Especificações de design, zonas e tempos
+│   ├── HOMOLOGACAO_V4_4_2026-10-29.json
+│   ├── MANIFESTO_SHA256.json
+│   ├── LEIA-ME-V4.4.txt
+│   └── LEIA-ME-RELEASE-ESTAVEL.txt
+│
+└── scripts/              # Servidores HTTP locais
+    ├── server.js         # Servidor Node.js puro com streaming HTTP Range
+    └── serve.py          # Servidor Python 3 padrão
+```
+
+---
+
+## 🔍 Auditoria e Homologação
+
+O player emite eventos estruturados a cada troca de notícia ou anúncio publicitário lateral (ciclos de 18s). Os logs gerados no painel técnico (`T`) podem ser carregados no Auditor para verificar:
+
+1. Desvios de tempo acima de 1,5s.
+2. Inícios e conclusões de anúncios laterais.
+3. Ocorrências de janela oculta (background throttling do navegador).
+
+Amostras de logs pré-gravados estão disponíveis em `data/samples/` para testes imediatos.
+
+---
+
+## 📄 Licença & Autor
+
+- **Autor**: Cristiano ([cschibelsky-star](https://github.com/cschibelsky-star))
+- **Organização**: Vitrine IA Pro

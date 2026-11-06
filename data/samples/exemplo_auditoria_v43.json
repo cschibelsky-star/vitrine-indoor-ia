@@ -1,0 +1,618 @@
+{
+  "auditor": "V4.3",
+  "generatedAt": "2026-10-29T00:45:14.161Z",
+  "filters": {
+    "version": "M1.1 / V4.2",
+    "session": "4cec2922-9151-49e4-825a-9f885a4a36a2",
+    "includeLegacy": false
+  },
+  "limits": "Registros internos; não provam exibição física",
+  "sessions": [
+    {
+      "id": "4cec2922-9151-49e4-825a-9f885a4a36a2",
+      "version": "M1.1 / V4.2"
+    }
+  ],
+  "summary": {
+    "records": 157,
+    "sideStarts": 34,
+    "sideCompleted": 33,
+    "mainStarts": 32
+  },
+  "side": [
+    {
+      "id": "anuncio-1",
+      "session": "4cec2922-9151-49e4-825a-9f885a4a36a2",
+      "start": "2026-10-29T00:32:36.325Z",
+      "end": "2026-10-29T00:32:54.331Z",
+      "state": "concluído",
+      "scheduledMs": 18000,
+      "elapsedMs": 18006
+    },
+    {
+      "id": "anuncio-2",
+      "session": "4cec2922-9151-49e4-825a-9f885a4a36a2",
+      "start": "2026-10-29T00:32:54.343Z",
+      "end": "2026-10-29T00:33:12.329Z",
+      "state": "concluído",
+      "scheduledMs": 18000,
+      "elapsedMs": 18000
+    },
+    {
+      "id": "anuncio-1",
+      "session": "4cec2922-9151-49e4-825a-9f885a4a36a2",
+      "start": "2026-10-29T00:33:12.334Z",
+      "end": "2026-10-29T00:33:30.331Z",
+      "state": "concluído",
+      "scheduledMs": 18000,
+      "elapsedMs": 18000
+    },
+    {
+      "id": "anuncio-2",
+      "session": "4cec2922-9151-49e4-825a-9f885a4a36a2",
+      "start": "2026-10-29T00:33:30.343Z",
+      "end": "2026-10-29T00:33:48.335Z",
+      "state": "concluído",
+      "scheduledMs": 18000,
+      "elapsedMs": 18003
+    },
+    {
+      "id": "anuncio-1",
+      "session": "4cec2922-9151-49e4-825a-9f885a4a36a2",
+      "start": "2026-10-29T00:33:48.342Z",
+      "end": "2026-10-29T00:34:06.581Z",
+      "state": "concluído",
+      "scheduledMs": 18000,
+      "elapsedMs": 18247
+    },
+    {
+      "id": "anuncio-2",
+      "session": "4cec2922-9151-49e4-825a-9f885a4a36a2",
+      "start": "2026-10-29T00:34:06.589Z",
+      "end": "2026-10-29T00:34:24.595Z",
+      "state": "concluído",
+      "scheduledMs": 18000,
+      "elapsedMs": 18014
+    },
+    {
+      "id": "anuncio-1",
+      "session": "4cec2922-9151-49e4-825a-9f885a4a36a2",
+      "start": "2026-10-29T00:34:24.603Z",
+      "end": "2026-10-29T00:34:42.594Z",
+      "state": "concluído",
+      "scheduledMs": 18000,
+      "elapsedMs": 18000
+    },
+    {
+      "id": "anuncio-2",
+      "session": "4cec2922-9151-49e4-825a-9f885a4a36a2",
+      "start": "2026-10-29T00:34:42.603Z",
+      "end": "2026-10-29T00:35:00.594Z",
+      "state": "concluído",
+      "scheduledMs": 18000,
+      "elapsedMs": 18000
+    },
+    {
+      "id": "anuncio-1",
+      "session": "4cec2922-9151-49e4-825a-9f885a4a36a2",
+      "start": "2026-10-29T00:35:00.604Z",
+      "end": "2026-10-29T00:35:18.595Z",
+      "state": "concluído",
+      "scheduledMs": 18000,
+      "elapsedMs": 18001
+    },
+    {
+      "id": "anuncio-2",
+      "session": "4cec2922-9151-49e4-825a-9f885a4a36a2",
+      "start": "2026-10-29T00:35:18.604Z",
+      "end": "2026-10-29T00:35:36.595Z",
+      "state": "concluído",
+      "scheduledMs": 18000,
+      "elapsedMs": 18000
+    },
+    {
+      "id": "anuncio-1",
+      "session": "4cec2922-9151-49e4-825a-9f885a4a36a2",
+      "start": "2026-10-29T00:35:36.605Z",
+      "end": "2026-10-29T00:35:54.830Z",
+      "state": "concluído",
+      "scheduledMs": 18000,
+      "elapsedMs": 18235
+    },
+    {
+      "id": "anuncio-2",
+      "session": "4cec2922-9151-49e4-825a-9f885a4a36a2",
+      "start": "2026-10-29T00:35:54.836Z",
+      "end": "2026-10-29T00:36:12.841Z",
+      "state": "concluído",
+      "scheduledMs": 18000,
+      "elapsedMs": 18010
+    },
+    {
+      "id": "anuncio-1",
+      "session": "4cec2922-9151-49e4-825a-9f885a4a36a2",
+      "start": "2026-10-29T00:36:12.849Z",
+      "end": "2026-10-29T00:36:30.845Z",
+      "state": "concluído",
+      "scheduledMs": 18000,
+      "elapsedMs": 18004
+    },
+    {
+      "id": "anuncio-2",
+      "session": "4cec2922-9151-49e4-825a-9f885a4a36a2",
+      "start": "2026-10-29T00:36:30.856Z",
+      "end": "2026-10-29T00:36:48.845Z",
+      "state": "concluído",
+      "scheduledMs": 18000,
+      "elapsedMs": 18000
+    },
+    {
+      "id": "anuncio-1",
+      "session": "4cec2922-9151-49e4-825a-9f885a4a36a2",
+      "start": "2026-10-29T00:36:48.854Z",
+      "end": "2026-10-29T00:37:07.095Z",
+      "state": "concluído",
+      "scheduledMs": 18000,
+      "elapsedMs": 18250
+    },
+    {
+      "id": "anuncio-2",
+      "session": "4cec2922-9151-49e4-825a-9f885a4a36a2",
+      "start": "2026-10-29T00:37:07.105Z",
+      "end": "2026-10-29T00:37:25.332Z",
+      "state": "concluído",
+      "scheduledMs": 18000,
+      "elapsedMs": 18238
+    },
+    {
+      "id": "anuncio-1",
+      "session": "4cec2922-9151-49e4-825a-9f885a4a36a2",
+      "start": "2026-10-29T00:37:25.341Z",
+      "end": "2026-10-29T00:37:43.581Z",
+      "state": "concluído",
+      "scheduledMs": 18000,
+      "elapsedMs": 18249
+    },
+    {
+      "id": "anuncio-2",
+      "session": "4cec2922-9151-49e4-825a-9f885a4a36a2",
+      "start": "2026-10-29T00:37:43.589Z",
+      "end": "2026-10-29T00:38:01.594Z",
+      "state": "concluído",
+      "scheduledMs": 18000,
+      "elapsedMs": 18013
+    },
+    {
+      "id": "anuncio-1",
+      "session": "4cec2922-9151-49e4-825a-9f885a4a36a2",
+      "start": "2026-10-29T00:38:01.603Z",
+      "end": "2026-10-29T00:38:19.611Z",
+      "state": "concluído",
+      "scheduledMs": 18000,
+      "elapsedMs": 18016
+    },
+    {
+      "id": "anuncio-2",
+      "session": "4cec2922-9151-49e4-825a-9f885a4a36a2",
+      "start": "2026-10-29T00:38:19.620Z",
+      "end": "2026-10-29T00:38:37.845Z",
+      "state": "concluído",
+      "scheduledMs": 18000,
+      "elapsedMs": 18235
+    },
+    {
+      "id": "anuncio-1",
+      "session": "4cec2922-9151-49e4-825a-9f885a4a36a2",
+      "start": "2026-10-29T00:38:37.856Z",
+      "end": "2026-10-29T00:38:56.095Z",
+      "state": "concluído",
+      "scheduledMs": 18000,
+      "elapsedMs": 18249
+    },
+    {
+      "id": "anuncio-2",
+      "session": "4cec2922-9151-49e4-825a-9f885a4a36a2",
+      "start": "2026-10-29T00:38:56.104Z",
+      "end": "2026-10-29T00:39:14.095Z",
+      "state": "concluído",
+      "scheduledMs": 18000,
+      "elapsedMs": 18000
+    },
+    {
+      "id": "anuncio-1",
+      "session": "4cec2922-9151-49e4-825a-9f885a4a36a2",
+      "start": "2026-10-29T00:39:14.107Z",
+      "end": "2026-10-29T00:39:32.096Z",
+      "state": "concluído",
+      "scheduledMs": 18000,
+      "elapsedMs": 18001
+    },
+    {
+      "id": "anuncio-2",
+      "session": "4cec2922-9151-49e4-825a-9f885a4a36a2",
+      "start": "2026-10-29T00:39:32.105Z",
+      "end": "2026-10-29T00:39:50.343Z",
+      "state": "concluído",
+      "scheduledMs": 18000,
+      "elapsedMs": 18246
+    },
+    {
+      "id": "anuncio-1",
+      "session": "4cec2922-9151-49e4-825a-9f885a4a36a2",
+      "start": "2026-10-29T00:39:50.351Z",
+      "end": "2026-10-29T00:40:08.595Z",
+      "state": "concluído",
+      "scheduledMs": 18000,
+      "elapsedMs": 18253
+    },
+    {
+      "id": "anuncio-2",
+      "session": "4cec2922-9151-49e4-825a-9f885a4a36a2",
+      "start": "2026-10-29T00:40:08.602Z",
+      "end": "2026-10-29T00:40:26.841Z",
+      "state": "concluído",
+      "scheduledMs": 18000,
+      "elapsedMs": 18246
+    },
+    {
+      "id": "anuncio-1",
+      "session": "4cec2922-9151-49e4-825a-9f885a4a36a2",
+      "start": "2026-10-29T00:40:26.848Z",
+      "end": "2026-10-29T00:40:44.845Z",
+      "state": "concluído",
+      "scheduledMs": 18000,
+      "elapsedMs": 18004
+    },
+    {
+      "id": "anuncio-2",
+      "session": "4cec2922-9151-49e4-825a-9f885a4a36a2",
+      "start": "2026-10-29T00:40:44.854Z",
+      "end": "2026-10-29T00:41:02.845Z",
+      "state": "concluído",
+      "scheduledMs": 18000,
+      "elapsedMs": 18000
+    },
+    {
+      "id": "anuncio-1",
+      "session": "4cec2922-9151-49e4-825a-9f885a4a36a2",
+      "start": "2026-10-29T00:41:02.853Z",
+      "end": "2026-10-29T00:41:21.080Z",
+      "state": "concluído",
+      "scheduledMs": 18000,
+      "elapsedMs": 18236
+    },
+    {
+      "id": "anuncio-2",
+      "session": "4cec2922-9151-49e4-825a-9f885a4a36a2",
+      "start": "2026-10-29T00:41:21.089Z",
+      "end": "2026-10-29T00:41:39.096Z",
+      "state": "concluído",
+      "scheduledMs": 18000,
+      "elapsedMs": 18015
+    },
+    {
+      "id": "anuncio-1",
+      "session": "4cec2922-9151-49e4-825a-9f885a4a36a2",
+      "start": "2026-10-29T00:41:39.105Z",
+      "end": "2026-10-29T00:41:57.096Z",
+      "state": "concluído",
+      "scheduledMs": 18000,
+      "elapsedMs": 18001
+    },
+    {
+      "id": "anuncio-2",
+      "session": "4cec2922-9151-49e4-825a-9f885a4a36a2",
+      "start": "2026-10-29T00:41:57.104Z",
+      "end": "2026-10-29T00:42:15.345Z",
+      "state": "concluído",
+      "scheduledMs": 18000,
+      "elapsedMs": 18248
+    },
+    {
+      "id": "anuncio-1",
+      "session": "4cec2922-9151-49e4-825a-9f885a4a36a2",
+      "start": "2026-10-29T00:42:15.353Z",
+      "end": "2026-10-29T00:42:33.344Z",
+      "state": "concluído",
+      "scheduledMs": 18000,
+      "elapsedMs": 18000
+    },
+    {
+      "id": "anuncio-2",
+      "session": "4cec2922-9151-49e4-825a-9f885a4a36a2",
+      "start": "2026-10-29T00:42:33.353Z",
+      "state": "em aberto",
+      "scheduledMs": 18000,
+      "elapsedMs": null
+    }
+  ],
+  "main": [
+    {
+      "id": "noticia-1",
+      "session": "4cec2922-9151-49e4-825a-9f885a4a36a2",
+      "start": "2026-10-29T00:32:36.335Z",
+      "end": "2026-10-29T00:32:47.335Z",
+      "state": "interrompido",
+      "scheduledMs": 18000,
+      "elapsedMs": 10998
+    },
+    {
+      "id": "evento-1",
+      "session": "4cec2922-9151-49e4-825a-9f885a4a36a2",
+      "start": "2026-10-29T00:33:46.846Z",
+      "end": "2026-10-29T00:34:05.334Z",
+      "state": "concluído",
+      "scheduledMs": 18000,
+      "elapsedMs": 18486
+    },
+    {
+      "id": "institucional-vitrine",
+      "session": "4cec2922-9151-49e4-825a-9f885a4a36a2",
+      "start": "2026-10-29T00:34:05.342Z",
+      "end": "2026-10-29T00:34:17.344Z",
+      "state": "concluído",
+      "scheduledMs": 14000,
+      "elapsedMs": 12000
+    },
+    {
+      "id": "anuncio-1",
+      "session": "4cec2922-9151-49e4-825a-9f885a4a36a2",
+      "start": "2026-10-29T00:34:17.352Z",
+      "end": "2026-10-29T00:34:35.845Z",
+      "state": "concluído",
+      "scheduledMs": 18000,
+      "elapsedMs": 18490
+    },
+    {
+      "id": "noticia-2",
+      "session": "4cec2922-9151-49e4-825a-9f885a4a36a2",
+      "start": "2026-10-29T00:34:35.853Z",
+      "end": "2026-10-29T00:34:54.335Z",
+      "state": "concluído",
+      "scheduledMs": 18000,
+      "elapsedMs": 18479
+    },
+    {
+      "id": "anuncio-2",
+      "session": "4cec2922-9151-49e4-825a-9f885a4a36a2",
+      "start": "2026-10-29T00:34:54.343Z",
+      "end": "2026-10-29T00:35:12.840Z",
+      "state": "concluído",
+      "scheduledMs": 18000,
+      "elapsedMs": 18495
+    },
+    {
+      "id": "noticia-1",
+      "session": "4cec2922-9151-49e4-825a-9f885a4a36a2",
+      "start": "2026-10-29T00:35:12.848Z",
+      "end": "2026-10-29T00:35:31.336Z",
+      "state": "concluído",
+      "scheduledMs": 18000,
+      "elapsedMs": 18485
+    },
+    {
+      "id": "evento-1",
+      "session": "4cec2922-9151-49e4-825a-9f885a4a36a2",
+      "start": "2026-10-29T00:35:31.344Z",
+      "end": "2026-10-29T00:35:49.845Z",
+      "state": "concluído",
+      "scheduledMs": 18000,
+      "elapsedMs": 18498
+    },
+    {
+      "id": "institucional-vitrine",
+      "session": "4cec2922-9151-49e4-825a-9f885a4a36a2",
+      "start": "2026-10-29T00:35:49.853Z",
+      "end": "2026-10-29T00:36:01.845Z",
+      "state": "concluído",
+      "scheduledMs": 14000,
+      "elapsedMs": 11990
+    },
+    {
+      "id": "anuncio-1",
+      "session": "4cec2922-9151-49e4-825a-9f885a4a36a2",
+      "start": "2026-10-29T00:36:01.853Z",
+      "end": "2026-10-29T00:36:20.344Z",
+      "state": "concluído",
+      "scheduledMs": 18000,
+      "elapsedMs": 18489
+    },
+    {
+      "id": "noticia-2",
+      "session": "4cec2922-9151-49e4-825a-9f885a4a36a2",
+      "start": "2026-10-29T00:36:20.352Z",
+      "end": "2026-10-29T00:36:38.845Z",
+      "state": "concluído",
+      "scheduledMs": 18000,
+      "elapsedMs": 18491
+    },
+    {
+      "id": "anuncio-2",
+      "session": "4cec2922-9151-49e4-825a-9f885a4a36a2",
+      "start": "2026-10-29T00:36:38.853Z",
+      "end": "2026-10-29T00:36:57.334Z",
+      "state": "concluído",
+      "scheduledMs": 18000,
+      "elapsedMs": 18479
+    },
+    {
+      "id": "noticia-1",
+      "session": "4cec2922-9151-49e4-825a-9f885a4a36a2",
+      "start": "2026-10-29T00:36:57.343Z",
+      "end": "2026-10-29T00:37:15.845Z",
+      "state": "concluído",
+      "scheduledMs": 18000,
+      "elapsedMs": 18500
+    },
+    {
+      "id": "evento-1",
+      "session": "4cec2922-9151-49e4-825a-9f885a4a36a2",
+      "start": "2026-10-29T00:37:15.854Z",
+      "end": "2026-10-29T00:37:34.336Z",
+      "state": "concluído",
+      "scheduledMs": 18000,
+      "elapsedMs": 18479
+    },
+    {
+      "id": "institucional-vitrine",
+      "session": "4cec2922-9151-49e4-825a-9f885a4a36a2",
+      "start": "2026-10-29T00:37:34.344Z",
+      "end": "2026-10-29T00:37:46.344Z",
+      "state": "concluído",
+      "scheduledMs": 14000,
+      "elapsedMs": 11998
+    },
+    {
+      "id": "anuncio-1",
+      "session": "4cec2922-9151-49e4-825a-9f885a4a36a2",
+      "start": "2026-10-29T00:37:46.352Z",
+      "end": "2026-10-29T00:38:04.846Z",
+      "state": "concluído",
+      "scheduledMs": 18000,
+      "elapsedMs": 18491
+    },
+    {
+      "id": "noticia-2",
+      "session": "4cec2922-9151-49e4-825a-9f885a4a36a2",
+      "start": "2026-10-29T00:38:04.854Z",
+      "end": "2026-10-29T00:38:23.335Z",
+      "state": "concluído",
+      "scheduledMs": 18000,
+      "elapsedMs": 18478
+    },
+    {
+      "id": "anuncio-2",
+      "session": "4cec2922-9151-49e4-825a-9f885a4a36a2",
+      "start": "2026-10-29T00:38:23.344Z",
+      "end": "2026-10-29T00:38:41.845Z",
+      "state": "concluído",
+      "scheduledMs": 18000,
+      "elapsedMs": 18499
+    },
+    {
+      "id": "noticia-1",
+      "session": "4cec2922-9151-49e4-825a-9f885a4a36a2",
+      "start": "2026-10-29T00:38:41.853Z",
+      "end": "2026-10-29T00:39:00.335Z",
+      "state": "concluído",
+      "scheduledMs": 18000,
+      "elapsedMs": 18479
+    },
+    {
+      "id": "evento-1",
+      "session": "4cec2922-9151-49e4-825a-9f885a4a36a2",
+      "start": "2026-10-29T00:39:00.344Z",
+      "end": "2026-10-29T00:39:18.845Z",
+      "state": "concluído",
+      "scheduledMs": 18000,
+      "elapsedMs": 18498
+    },
+    {
+      "id": "institucional-vitrine",
+      "session": "4cec2922-9151-49e4-825a-9f885a4a36a2",
+      "start": "2026-10-29T00:39:18.853Z",
+      "end": "2026-10-29T00:39:30.845Z",
+      "state": "concluído",
+      "scheduledMs": 14000,
+      "elapsedMs": 11990
+    },
+    {
+      "id": "anuncio-1",
+      "session": "4cec2922-9151-49e4-825a-9f885a4a36a2",
+      "start": "2026-10-29T00:39:30.853Z",
+      "end": "2026-10-29T00:39:49.344Z",
+      "state": "concluído",
+      "scheduledMs": 18000,
+      "elapsedMs": 18489
+    },
+    {
+      "id": "noticia-2",
+      "session": "4cec2922-9151-49e4-825a-9f885a4a36a2",
+      "start": "2026-10-29T00:39:49.353Z",
+      "end": "2026-10-29T00:40:07.845Z",
+      "state": "concluído",
+      "scheduledMs": 18000,
+      "elapsedMs": 18490
+    },
+    {
+      "id": "anuncio-2",
+      "session": "4cec2922-9151-49e4-825a-9f885a4a36a2",
+      "start": "2026-10-29T00:40:07.854Z",
+      "end": "2026-10-29T00:40:26.335Z",
+      "state": "concluído",
+      "scheduledMs": 18000,
+      "elapsedMs": 18478
+    },
+    {
+      "id": "noticia-1",
+      "session": "4cec2922-9151-49e4-825a-9f885a4a36a2",
+      "start": "2026-10-29T00:40:26.347Z",
+      "end": "2026-10-29T00:40:44.865Z",
+      "state": "concluído",
+      "scheduledMs": 18000,
+      "elapsedMs": 18515
+    },
+    {
+      "id": "evento-1",
+      "session": "4cec2922-9151-49e4-825a-9f885a4a36a2",
+      "start": "2026-10-29T00:40:44.872Z",
+      "end": "2026-10-29T00:41:03.341Z",
+      "state": "concluído",
+      "scheduledMs": 18000,
+      "elapsedMs": 18465
+    },
+    {
+      "id": "institucional-vitrine",
+      "session": "4cec2922-9151-49e4-825a-9f885a4a36a2",
+      "start": "2026-10-29T00:41:03.350Z",
+      "end": "2026-10-29T00:41:15.335Z",
+      "state": "concluído",
+      "scheduledMs": 14000,
+      "elapsedMs": 11982
+    },
+    {
+      "id": "anuncio-1",
+      "session": "4cec2922-9151-49e4-825a-9f885a4a36a2",
+      "start": "2026-10-29T00:41:15.342Z",
+      "end": "2026-10-29T00:41:33.845Z",
+      "state": "concluído",
+      "scheduledMs": 18000,
+      "elapsedMs": 18500
+    },
+    {
+      "id": "noticia-2",
+      "session": "4cec2922-9151-49e4-825a-9f885a4a36a2",
+      "start": "2026-10-29T00:41:33.856Z",
+      "end": "2026-10-29T00:41:52.335Z",
+      "state": "concluído",
+      "scheduledMs": 18000,
+      "elapsedMs": 18476
+    },
+    {
+      "id": "anuncio-2",
+      "session": "4cec2922-9151-49e4-825a-9f885a4a36a2",
+      "start": "2026-10-29T00:41:52.347Z",
+      "end": "2026-10-29T00:42:10.846Z",
+      "state": "concluído",
+      "scheduledMs": 18000,
+      "elapsedMs": 18495
+    },
+    {
+      "id": "noticia-1",
+      "session": "4cec2922-9151-49e4-825a-9f885a4a36a2",
+      "start": "2026-10-29T00:42:10.855Z",
+      "end": "2026-10-29T00:42:29.335Z",
+      "state": "concluído",
+      "scheduledMs": 18000,
+      "elapsedMs": 18477
+    },
+    {
+      "id": "evento-1",
+      "session": "4cec2922-9151-49e4-825a-9f885a4a36a2",
+      "start": "2026-10-29T00:42:29.345Z",
+      "state": "em aberto",
+      "scheduledMs": null,
+      "elapsedMs": null
+    }
+  ]
+}
