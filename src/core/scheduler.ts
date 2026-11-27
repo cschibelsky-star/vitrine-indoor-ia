@@ -58,6 +58,7 @@ export class Scheduler {
   }
 
   public startItem(item: PlaylistItem, now = Date.now()) {
+    if (this.active) this.close('interrupted', now);
     this.active = { item, startedAt: new Date() };
     this.nextAt = now + (item.duration * 1000);
 
@@ -67,12 +68,15 @@ export class Scheduler {
     });
 
     const newsBox = document.getElementById('news');
+    const vid = document.getElementById('localVideo') as HTMLVideoElement | null;
     if (item.type === 'video') {
-      const vid = document.getElementById('indoorInstitutional') as HTMLVideoElement | null;
       if (newsBox) newsBox.classList.add('playing');
       if (vid) {
+        if (!vid.hasAttribute('src')) vid.src = '/intro_vitrine.mp4';
         vid.currentTime = 0;
         vid.play().catch(() => {
+          if (this.active?.item !== item) return;
+          newsBox?.classList.remove('playing');
           telemetry.log('midia_falhou', item, { reason: 'autoplay_blocked' });
           const fallback = document.getElementById('indoorFallback');
           if (fallback) fallback.style.display = 'flex';
@@ -81,6 +85,7 @@ export class Scheduler {
       return;
     }
 
+    vid?.pause();
     if (newsBox) newsBox.classList.remove('playing');
 
     this.fadeSwap(() => {
@@ -106,7 +111,7 @@ export class Scheduler {
     const cur = this.active;
     if (!cur) return;
     const elapsed = now - cur.startedAt.getTime();
-    telemetry.log('conteudo_concluido', cur.item, {
+    telemetry.log(reason === 'interrupted' ? 'conteudo_interrompido' : 'conteudo_concluido', cur.item, {
       reason,
       elapsedMs: elapsed,
       scheduledMs: cur.item.duration * 1000,

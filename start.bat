@@ -1,16 +1,15 @@
 @echo off
 setlocal
 cd /d "%~dp0"
-echo ======================================================
-echo Iniciando Servidor do Vitrine Indoor IA...
-echo ======================================================
-start "" http://localhost:8080/
-if exist scripts\server.cjs (
-  node scripts\server.cjs
-) else if exist scripts\serve.py (
-  python scripts\serve.py
-) else (
-  echo Erro: scripts de servidor não encontrados.
-  pause
-)
-endlocal
+if exist dist\index.html goto serve
+call npm ci
+if errorlevel 1 goto failed
+call npm run build
+if errorlevel 1 goto failed
+:serve
+node scripts\server.cjs --open
+if not errorlevel 1 exit /b 0
+:failed
+echo Falha ao iniciar o player. Veja a mensagem acima.
+pause
+exit /b 1

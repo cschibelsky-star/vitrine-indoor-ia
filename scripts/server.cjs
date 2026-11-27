@@ -9,7 +9,12 @@ const fs = require('fs');
 const path = require('path');
 
 const PORT = process.env.PORT || 8080;
-const ROOT_DIR = path.resolve(__dirname, '..');
+const ROOT_DIR = path.resolve(__dirname, '..', 'dist');
+
+if (!fs.existsSync(path.join(ROOT_DIR, 'index.html'))) {
+  console.error('Player ainda não compilado. Execute npm ci e npm run build.');
+  process.exit(1);
+}
 
 const MIME_TYPES = {
   '.html': 'text/html; charset=utf-8',
@@ -91,5 +96,8 @@ server.listen(PORT, () => {
   console.log(`- Auditor V4.3:     http://localhost:${PORT}/auditor/`);
   console.log(`- Raiz dos arquivos: ${ROOT_DIR}`);
   console.log(`=======================================================`);
-  console.log(`Pressione Ctrl+C para encerrar.`);
+  if (process.platform === 'win32' && process.argv.includes('--open')) {
+    require('node:child_process').spawn('explorer.exe', [`http://localhost:${PORT}/`], { stdio: 'ignore' }).unref();
+  }
+  console.log('Pressione Ctrl+C para encerrar.');
 });
