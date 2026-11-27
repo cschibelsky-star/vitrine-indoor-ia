@@ -6,7 +6,8 @@
   "main": "index.html",
   "scripts": {
     "dev": "vite",
-    "build": "tsc --noEmit && vite build",
+    "verificar": "tsc --noEmit && vite build",
+    "build": "npm run verificar",
     "build:single": "cross-env SINGLE_FILE=true vite build",
     "preview": "vite preview",
     "start": "node scripts/server.cjs",

@@ -6,30 +6,21 @@ Player autônomo de vitrine corporativa (TV corporativa / mídia indoor) desenvo
 
 ## 🚀 Inicialização Rápida
 
-Você tem três opções para rodar o projeto:
+No Windows, com Node.js 24 e npm instalados, abra `start.bat`. Na primeira execução o inicializador instala as dependências e compila o projeto. Nas próximas, ele serve o pacote existente em `dist/` e abre o navegador quando a porta está pronta.
 
-### Opção 1: Dois cliques (Windows)
-- Dê um duplo clique no arquivo `start.bat`. Ele iniciará o servidor local e abrirá o navegador em `http://localhost:8080`.
+Para atualizar o pacote após mudanças no código:
 
-### Opção 2: Modo Desenvolvimento Moderno (Vite + TypeScript)
 ```bash
-npm install
-npm run dev   # Inicia servidor Vite com hot-reload (HMR)
+npm ci
+npm run build
+npm start
 ```
 
-### Opção 3: Servidor Leve Node.js (Range Requests para MP4)
-```bash
-npm start     # Inicia scripts/server.cjs na porta 8080
-```
-- **Player principal:** [http://localhost:8080/](http://localhost:8080/)
-- **Auditor de logs:** [http://localhost:8080/auditor/](http://localhost:8080/auditor/)
+O player fica em http://localhost:8080/ e o auditor em http://localhost:8080/auditor/. A tecla T abre o painel técnico para exportar os registros em JSON. Importe o arquivo no auditor para conferir a sessão. A tecla I aciona o vídeo institucional.
 
-### Opção 4: Compilação de Produção
-```bash
-npm run build # Compila TypeScript e gera bundle em /dist
-```
+Para desenvolvimento, use `npm ci` e `npm run dev`.
 
-### Opção 5: Versão Estática Autocontida (Offline)
+### Versão Estática Autocontida (Offline)
 - A versão autocontida original de 1 arquivo continua preservada em `docs/player_v44_autocontido_original.html`.
 
 ---

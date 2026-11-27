@@ -163,3 +163,16 @@ window.addEventListener('keydown', (e) => {
   }
   if (e.key === 'ArrowRight') scheduler.advance();
 });
+
+document.getElementById('m1Export')?.addEventListener('click', () => {
+  const link = document.createElement('a');
+  const url = URL.createObjectURL(telemetry.exportJson());
+  link.href = url;
+  link.download = `vitrine_indoor_${telemetry.getSessionId()}.json`;
+  link.click();
+  window.setTimeout(() => URL.revokeObjectURL(url), 1000);
+});
+
+document.addEventListener('visibilitychange', () => {
+  telemetry.log(document.hidden ? 'janela_oculta' : 'janela_recuperada');
+});
